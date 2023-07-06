@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<AgendaContext>(options => options.UseNpgsql("Host=localhost;Port=5432;Pooling=True;Database=AgendaMVC;User ID=root;Password=123456;"));
+builder.Services.AddDbContext<AgendaContext>(options => options.UseNpgsql("Host=localhost;Port=5432;Pooling=True;Database=AgendaMVC;User ID=postgres;Password=123456;"));
 
 
 var app = builder.Build();
